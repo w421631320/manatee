@@ -13,6 +13,7 @@
         <module>manatee-core</module>
         <module>manatee-extension</module>
         <module>manatee-dist</module>
+        <module>manatee-web</module>
     </modules>
 
     <properties>
