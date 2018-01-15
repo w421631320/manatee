@@ -14,15 +14,19 @@
         <module>manatee-extension</module>
         <module>manatee-dist</module>
         <module>manatee-web</module>
+        <module>manatee-test</module>
     </modules>
 
     <properties>
         <java.src.version>1.8</java.src.version>
         <java.target.version>1.8</java.target.version>
         <log4j2.version>2.6.2</log4j2.version>
+        <spark.version>2.0.0</spark.version>
+        <hadoop.version>2.7.1</hadoop.version>
     </properties>
 
     <dependencies>
+
         <!-- junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -48,16 +52,29 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- spark core -->
             <dependency>
-                <groupId>com.typesafe.akka</groupId>
-                <artifactId>akka-actor_2.12</artifactId>
-                <version>2.5.3</version>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-core_2.11</artifactId>
+                <version>${spark.version}</version>
             </dependency>
+
+            <!-- spark sql -->
             <dependency>
-                <groupId>com.typesafe.akka</groupId>
-                <artifactId>akka-testkit_2.12</artifactId>
-                <version>2.5.3</version>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-sql_2.11</artifactId>
+                <version>${spark.version}</version>
             </dependency>
+
+            <!-- hadoop aws -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-aws</artifactId>
+                <version>${hadoop.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
