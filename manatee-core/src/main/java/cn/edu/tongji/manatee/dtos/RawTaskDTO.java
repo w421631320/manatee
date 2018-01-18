@@ -23,7 +23,7 @@ public class RawTaskDTO implements Serializable {
 
     private HashMap<String, String> headers;
 
-    private RequestType requestType;t
+    private RequestType requestType;
 
 
 }

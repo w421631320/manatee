@@ -19,6 +19,5 @@ public class Log4j2Test {
             logger.debug("debug");
             logger.error("error");
         }
-
     }
 }
