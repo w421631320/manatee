@@ -11,6 +11,4 @@ import java.io.Serializable;
 public class ResultDTO implements Serializable {
 
 
-
-
 }
