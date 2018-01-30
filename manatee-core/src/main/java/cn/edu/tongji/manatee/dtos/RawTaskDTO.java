@@ -25,5 +25,10 @@ public class RawTaskDTO implements Serializable {
 
     private RequestType requestType;
 
+    private String signature;
+
+    private Long prior;
+
+
 
 }
